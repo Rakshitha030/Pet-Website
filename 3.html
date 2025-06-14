@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bath & Dry Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling specific to the Bath & Dry page */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .service-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .service-item {
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            background-color: white;
+        }
+        .service-item img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .service-item h3 {
+            margin: 10px 0;
+        }
+        .service-item p {
+            padding: 0 10px;
+            color: #555;
+        }
+        .service-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .service-item button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .service-item button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <a href="file:///C:/Users/HP/OneDrive/Documents/GitHub/Resume/pet%20website.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/HP/Online-Pet-Shop-Management-System/2.html">Full Grooming</a>
+                    <a href="bath-dry.html">Bath & Dry</a>
+                    <a href="file:///C:/Users/HP/Online-Pet-Shop-Management-System/4.html">Styling</a>
+                </div>
+            </div>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="service-header">
+        <h1>Bath & Dry Services</h1>
+        <p>High-quality bath and dry services to keep your pets fresh, clean, and healthy.</p>
+    </section>
+
+    <section class="service-container">
+        <div class="service-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.hj4SyXB9kdC8O2FUnJ3eAQHaE6&pid=Api&P=0&h=180" alt="Dog Bath & Dry">
+            <h3>Dog Bath & Dry</h3>
+            <p>Gentle and effective bath and drying services for dogs of all sizes.</p>
+            <p class="price">2520 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Book Now</button>
+        </div>
+        <div class="service-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.5NiMgqtF7iRgVIfbrATD-AHaDa&pid=Api&P=0&h=180" alt="Cat Bath & Dry" width="300" height="200">
+            <h3>Cat Bath & Dry</h3>
+            <p>Specialized bath and dry services for cats to ensure a stress-free experience.</p>
+            <p class="price">2100 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Book Now</button>
+        </div>
+    
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pet Grooming Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff7f50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card h2 {
+      color: #ff7f50;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .service-card ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .service-card ul li {
+      padding: 5px 0;
+    }
+
+    .service-card ul li::before {
+      content: "✔️";
+      color: #ff7f50;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+  </header>
+
+  <div class="services-container">
+    <div class="service-card">
+      <h2>Basic Grooming</h2>
+      <p>Perfect for a quick refresh!</p>
+      <ul>
+        <li>Bath and Blow Dry</li>
+        <li>Brushing</li>
+        <li>Ear Cleaning</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>Full Grooming</h2>
+      <p>Comprehensive care for your pet.</p>
+      <ul>
+        <li>Nail Trimming</li>
+        <li>Haircut and Styling</li>
+        <li>Teeth Brushing</li>
+        <li>Shampoo and Conditioning</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>Advanced Services</h2>
+      <p>Special care for special needs.</p>
+      <ul>
+        <li>Anti-Tick & Flea Treatment</li>
+        <li>Medicated Bath</li>
+        <li>Sanitary Trimming</li>
+        <li>Anal Gland Expression</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Happy Tails. All rights reserved.</p>
+  </footer>
+</body>
+</html>

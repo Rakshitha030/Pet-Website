@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grooming Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for grooming accessories page */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .accessories-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .accessories-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .accessory-item {
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            background-color: white;
+        }
+        .accessory-item img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .accessory-item h3 {
+            margin: 10px 0;
+        }
+        .accessory-item p {
+            padding: 0 10px;
+            color: #555;
+        }
+        .accessory-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .accessory-item button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .accessory-item button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <a href="file:///C:/Users/HP/OneDrive/Documents/GitHub/Resume/pet%20website.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/HP/Online-Pet-Shop-Management-System/2.html">Full Grooming</a>
+                    <a href="file:///C:/Users/HP/Online-Pet-Shop-Management-System/3.html">Bath & Dry</a>
+                    <a href="#">Styling</a>
+                </div>
+            </div>
+            <a href="Gallery.html">Gallery</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="accessories-header">
+        <h1>Grooming Accessories</h1>
+        <p>Find the best grooming accessories for your pets. High-quality tools and products for cats and dogs.</p>
+    </section>
+
+    <section class="accessories-container">
+        <div class="accessory-item">
+            <img src="images/dog-brush.jpg" alt="Dog Brush">
+            <h3>Dog Brush</h3>
+            <p>High-quality brush for detangling and grooming your dog’s fur.</p>
+            <p class="price">1260 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Buy Now</button>
+        </div>
+        <div class="accessory-item">
+            <img src="images/cat-comb.jpg" alt="Cat Comb">
+            <h3>Cat Comb</h3>
+            <p>Gentle comb designed to remove loose fur and prevent shedding.</p>
+            <p class="price">840 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Buy Now</button>
+        </div>
+        <div class="accessory-item">
+            <img src="images/shampoo.jpg" alt="Pet Shampoo">
+            <h3>Pet Shampoo</h3>
+            <p>Natural and hypoallergenic shampoo suitable for dogs and cats.</p>
+            <p class="price">1008 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Buy Now</button>
+        </div>
+        <div class="accessory-item">
+            <img src="images/nail-clipper.jpg" alt="Nail Clipper">
+            <h3>Pet Nail Clipper</h3>
+            <p>Safe and easy-to-use nail clipper for pets of all sizes.</p>
+            <p class="price">672 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Buy Now</button>
+        </div>
+        <div class="accessory-item">
+            <img src="images/towel.jpg" alt="Pet Towel">
+            <h3>Pet Towel</h3>
+            <p>Super absorbent towel for quick and effective drying.</p>
+            <p class="price">504 inr</p>
+            <button onclick="location.href='booking-confirmation.html'">Buy Now</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pet Grooming Accessories. All rights reserved.</p>
+    </footer>
+</body>
+</html>

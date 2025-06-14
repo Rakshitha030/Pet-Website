@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Website Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">Supertails</a>
+    </div>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">Offer Zone</a>
+      </li>
+      <li class="dropdown">
+        <a href="#">Dogs</a>
+        <div class="dropdown-content">
+          <div class="dropdown-section">
+            <h4>Dog Food</h4>
+            <a href="#">Dry Food</a>
+            <a href="#">Wet Food</a>
+            <a href="#">Grain-Free Food</a>
+          </div>
+          <div class="dropdown-section">
+            <h4>Dog Accessories</h4>
+            <a href="#">Collars</a>
+            <a href="#">Bowls</a>
+            <a href="#">Leashes</a>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Cats</a>
+      </li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products">
+      <button>Search</button>
+    </div>
+  </nav>
+  <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    min-width: 200px;
+  }
+  
+  .nav-links .dropdown-content .dropdown-section {
+    margin-bottom: 10px;
+  }
+  
+  .nav-links .dropdown-content h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .nav-links .dropdown-content a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .nav-links li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  </style>
+</body>
+</html>
